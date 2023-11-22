@@ -14,9 +14,3 @@ try:
     print(my_square.__size)
 except Exception as e:
     print(e)
-
-guillaume@ubuntu:~/0x06$ ./1-main.py
-<class '1-square.Square'>
-{'_Square__size': 3}
-'Square' object has no attribute 'size'
-'Square' object has no attribute '__size'
