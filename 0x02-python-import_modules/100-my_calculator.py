@@ -1,24 +1,14 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from sys import argv
-    from calculator_1 import add, sub, mul, div
-    argc = len(argv)
-    if argc != 4:
-        print('Usage: {} <a> <operator> <b>'.format(argv[0]))
-        exit(1)
-        ops = {
-                '+': add,
-                '-': sub,
-                '*': mul,
-                '/': div
-                }
-        if argv[2] in ops:
-            num1 = int(argv[1])
-            num2 = int(argv[3])
-            op = ops[argv[2]]
-            result = op(num1, num2)
-            print('{:d} {:s} {:d} = {:d}'.format(num1, argv[2], num2, result))
+# 100-my_calculator.py
+# Brennan D Baraban <375@holbertonschool.com>
+
+"""Print all possible different combinations of two digits in ascending order.
+
+    The two digits must be different - 01 and 10 are considered identical.
+    """
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
         else:
-            print('Unknown operator. Available operators: +, -, * and /')
-            exit(1)
-            exit(0)
+            print("{}{}".format(digit1, digit2), end=", ")
