@@ -4,7 +4,7 @@
 
 class LockedClass:
     """
-    Prevent the user from instantiatting new LockedClass attributes
+    Prevent the user from instantiating new LockedClass attributes
     for anything but attributes called 'first_name'.
     """
 
