@@ -38,9 +38,6 @@ class Rectangle:
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
-        @height.setter
-    def height(self, value):
-        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -62,7 +59,7 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
 
-        rect = []
+            rect = []
         for i in range(self.__height):
             [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
