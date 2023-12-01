@@ -18,11 +18,11 @@ Test string with spaces:
 Test string with spaces 2:
     >>> text_indentation("        Holberton")
     Holberton
-    
+
 Test string with spaces 3:
     >>> text_indentation("        Holberton          ")
     Holberton
-    
+
 Test string with empty string:
     >>> text_indentation("")
 
